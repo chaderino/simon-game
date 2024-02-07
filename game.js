@@ -19,6 +19,18 @@ $(document).on("keydown", function() {
     }
 })
 
+// mobile on touch to start
+$(document).on("touchstart", function() {
+
+    if (!toggle) {
+
+    $("h1").text("level " + level);
+    nextSequence(); 
+    toggle = true;
+   
+    }
+})
+
 // random sequence
 function nextSequence() {
 
